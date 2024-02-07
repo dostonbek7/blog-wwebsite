@@ -10,15 +10,21 @@
 .blogCards {
  display: flex;
  align-items: center;
+ justify-content: center;
 
-  gap: 10px;
+  gap: 20px;
 }
-.card img{
+.card {
+  padding: 15px;
+  width: 350px;
+}
+.card img {
   margin-bottom: 30px;
   object-fit: cover;
+  width: 100%;
   border-radius: 10px;
 }
-.card h6{
+.card h6 {
   font-weight: 500;
   line-height: 20px;
   margin-bottom: 16px;
@@ -36,4 +42,19 @@
 .card p {
   line-height: 28px;
   color: #232536;
+}
+@media (max-width: 992px) {
+  .card h2 {
+    font-size: 22px;
+  }
+  .card {
+    padding: 15px;
+    width: 250px;
+  }
+}
+@media (max-width: 768px) {
+  .card {
+    padding: 15px;
+    width: 300px;
+  }
 }

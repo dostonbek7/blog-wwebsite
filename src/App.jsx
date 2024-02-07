@@ -2,7 +2,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import MainLayout from "./layout/MainLayout";
 //pages
 import Home from "./pages/Home";
-import Blogs from "./pages/Blogs";
+import Blog from "./pages/Blog";
 import About from "./pages/About";
 import Register from './pages/Register'
 
@@ -11,14 +11,14 @@ function App() {
     {
       path: "/",
       element: <MainLayout />,
-      children: [ 
+      children: [
         {
           index: true,
           element: <Home />,
         },
         {
           path:'blog',
-          element:<Blogs/>
+          element:<Blog/>
         },
         {
           path:'about',

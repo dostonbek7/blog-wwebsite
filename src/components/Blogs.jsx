@@ -34,11 +34,11 @@ function Blogs() {
       <div className="container">
         <h2 className={title}>Popular blogs</h2>
         <ul className={blogCards}>
-          {blogs.map((blog) => {
+        {blogs.map((blog) => {
             const { id, name, date, title, text, img } = blog;
             return (
               <li className={card} key={id}>
-                <img src={img} alt={title} width={405} height={318} />
+                <img src={img} alt={title} />
                 <h6>
                   By <span>{name}</span> | {date}
                 </h6>

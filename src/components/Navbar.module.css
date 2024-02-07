@@ -6,6 +6,7 @@
   top: 0;
   left: 0;
   right: 0;
+  z-index: 10;
 }
 .navbar{
   display: flex;
@@ -40,6 +41,7 @@
   font-weight: 700;
   color: #232536;
   border-radius: 10px;
+  cursor: pointer;
 }
 .loginBtn:hover{
   background: #FFD050;
@@ -53,6 +55,7 @@
   display: none;
   color: #fff;
   font-size: 30px;
+  cursor: pointer;
 }
 .menu:hover{
   color: #FFD050;
